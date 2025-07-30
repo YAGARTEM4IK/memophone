@@ -12,15 +12,19 @@
     <link rel="icon" href="favicon.ico" type="image/x-icon" />
   </head>
   <body>
+    <div id="theme-toggle">🌓 Темная тема</div>
+    
     <header>
       <h1>MemoPhone</h1>
       <p>Главная новинка 2025 года!!!</p>
+      <div class="banner">ТОЛЬКО СЕГОДНЯ скидка -33%</div>
     </header>
 
     <aside>
       <div id="forOrder">
         <div id="photo">
           <img id="photoPhone" src="photogenicPhone.jpg" alt="MemoPhone" />
+          <div class="photo-badge">NEW</div>
         </div>
 
         <div id="price">
@@ -29,9 +33,17 @@
           <span id="sale">-33%</span>
         </div>
 
+        <div class="color-selector">
+          <span>Цвет: </span>
+          <div class="color-option white selected" data-color="white"></div>
+          <div class="color-option black" data-color="black"></div>
+          <div class="color-option gold" data-color="gold"></div>
+        </div>
+
         <div class="order">
           <span>Заказать: </span>
           <button id="buttonOrder">9999 ₽</button>
+          <div class="counter">Уже заказали: <span id="orderCount">0</span></div>
         </div>
       </div>
 
@@ -51,7 +63,7 @@
         </div>
         <div>
           <span class="marked">Цвет:</span>
-          <p>Белый</p>
+          <p id="selectedColorText">Белый</p>
         </div>
         <div>
           <span class="marked">Диагональ экрана, дюйм:</span>
@@ -87,9 +99,33 @@
           суперский смартфон.
         </p>
       </div>
+
+      <div class="reviews">
+        <h2>Отзывы покупателей</h2>
+        <div class="review">
+          <div class="review-header">
+            <span class="review-author">Анонимный фанат</span>
+            <span class="review-rating">★★★★★</span>
+          </div>
+          <p class="review-text">Лучший телефон в мире! 10/10</p>
+        </div>
+        <div class="review">
+          <div class="review-header">
+            <span class="review-author">Скибиди-энтузиаст</span>
+            <span class="review-rating">★★★★☆</span>
+          </div>
+          <p class="review-text">Туалеты выглядят потрясающе, но хотелось бы больше FPS</p>
+        </div>
+        <button id="addReviewBtn">Добавить отзыв</button>
+      </div>
     </aside>
     <footer>
-      <p>&copy; YAG_ARTEM</p>
+      <div class="social-links">
+        <a href="#">Twitter</a>
+        <a href="#">Instagram</a>
+        <a href="#">TikTok</a>
+      </div>
+      <p>&copy; YAG_ARTEM 2025</p>
       <span id="attention">
         Этот сайт — чистой воды сатира и пародия. Все совпадения с реальными
         телефонами и их создателями случайны. <br />
@@ -98,5 +134,7 @@
         Не пытайтесь купить этот телефон — его не существует! 😄
       </span>
     </footer>
+
+    <script src="script.js"></script>
   </body>
 </html>
